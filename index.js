@@ -25,12 +25,21 @@ function onInit(e) {
   setAlert();
 }
 
+/**
+ * Genera serie de numeros y los agrega en una lista
+ * @param {number} numeroInicial
+ * @returns {void}
+ */
 function generarLista(numeroInicial) {
   for (let i = 1; i <= numeroInicial; i++) {
     lista.push(i);
   }
 }
 
+/**
+ * Obtiene el los numeros primos de una lista
+ * @returns {void}
+ */
 function getNumerosPrimos() {
   lista.forEach((num) => {
     let result = esPrimo(num);
@@ -40,6 +49,11 @@ function getNumerosPrimos() {
   });
 }
 
+/**
+ * Valida si el numero de estrada es primo o no lo es y retorma un boolean
+ * @param {number} numero
+ * @returns {boolean}
+ */
 function esPrimo(numero) {
   let x = 2;
   // Casos especiales
