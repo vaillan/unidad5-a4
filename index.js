@@ -19,7 +19,7 @@ function onInit(e) {
   generarLista(numInput);
 
   //Verificar numeros primos
-  obtenerNumerosPrimos();
+  getNumerosPrimos();
 
   //Muestra etiqueta
   setAlert();
@@ -31,7 +31,7 @@ function generarLista(numeroInicial) {
   }
 }
 
-function obtenerNumerosPrimos() {
+function getNumerosPrimos() {
   lista.forEach((num) => {
     let result = esPrimo(num);
     if (result) {
